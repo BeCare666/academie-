@@ -26,9 +26,9 @@
             productRef.on("value", (snapshot) => {
                 document.getElementById('sameToBody').style.display = "none"
                 var UserMailMy = localStorage.getItem('userMailMy');
-                //alert(UserMailMy)
-                if(!UserMailMy && UserMailMy !== null){
-                    swal("Entrer un email valide", {
+                alert(UserMailMy)
+                if(!UserMailMy){
+                    swal("Entrer un email valide.", {
                         content: "input",
                         closeOnClickOutside: false,
                         })
